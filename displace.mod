@@ -19,6 +19,7 @@ if "${dir} == 6" then &
 # Reset box and simulation parameters
 
 clear
+plugin load libdeepmd_lmp.so 
 box tilt large
 read_restart restart.equil
 include potential.mod
@@ -74,6 +75,7 @@ variable C6neg equal ${d6}
 # Reset box and simulation parameters
 
 clear
+plugin load libdeepmd_lmp.so 
 box tilt large
 read_restart restart.equil
 include potential.mod
